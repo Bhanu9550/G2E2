@@ -64,8 +64,8 @@ To build a global ecosystem where **renewable energy and eco-friendly innovation
 
 ⬇️
 
-**⚡ EV Charging** &nbsp; • &nbsp;
-**☀️ Solar Energy** &nbsp; • &nbsp;
+**⚡ Green Bell - EV Stations** &nbsp; • &nbsp;
+**☀️ Solar Panels** &nbsp; • &nbsp;
 **🌱 Eco-Friendly Businesses** &nbsp; • &nbsp;
 **💡 Green Technology**
 
