@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Logo from "../../../../assets/Logo.png";
-import Background from "../../../../assets/background.png";
 import { Link } from "react-scroll";
 import "./Navbar.css";
 
@@ -56,9 +55,6 @@ const Navbar = () => {
             Contact
           </Link>
         </div>
-      </section>
-      <section className="hero-section">
-        
       </section>
     </>
   );
