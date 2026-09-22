@@ -1,0 +1,572 @@
+:root {
+  --primary-green: #1f5135;
+  --eco-green: #3d8345;
+  --accent-green: #63b45a;
+  --light-green: #9ce38f;
+  --dark-green: #123522;
+  --deep-green: #0c291b;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.greenbell {
+  position: relative;
+  width: 100%;
+  min-height: 780px;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+.greenbell-card {
+  position: relative;
+  width: min(1100px, 100%);
+  min-height: 620px;
+  padding: 140px 60px 60px;
+  border-radius: 36px;
+  background: linear-gradient(145deg, #143b28 0%, #1a4a32 50%, #123522 100%);
+  color: white;
+  overflow: visible;
+}
+
+/* Globe */
+.greenbell-globe {
+  position: absolute;
+  top: -95px;
+  left: 40%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+
+.globe-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Content */
+.greenbell-content {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.greenbell-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.greenbell-brand h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 10px;
+  color: white;
+}
+
+.logo-wrapper {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  padding: 4px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.greenbell-label {
+  display: inline-flex;
+  padding: 8px 20px;
+  background: rgba(99, 180, 90, 0.15);
+  border: 1px solid rgba(156, 227, 143, 0.4);
+  border-radius: 50px;
+  color: var(--light-green);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.greenbell-content h1 {
+  font-size: clamp(42px, 6vw, 60px);
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -2.5px;
+  margin: 0 0 24px;
+  color: white;
+}
+
+.greenbell-content h1 span {
+  color: var(--light-green);
+}
+
+.greenbell-description {
+  font-size: 20px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 620px;
+  margin: 0 auto 40px;
+}
+
+/* Features */
+.greenbell-features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.greenbell-feature {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  min-width: 170px;
+  transition: all 0.3s ease;
+}
+
+.greenbell-feature:hover {
+  background: rgba(99, 180, 90, 0.15);
+  border-color: var(--accent-green);
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 26px;
+  color: var(--accent-green);
+  flex-shrink: 0;
+}
+
+.greenbell-feature span {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* Glows */
+.greenbell-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.greenbell-glow-1 {
+  width: 320px;
+  height: 320px;
+  background: rgba(99, 180, 90, 0.18);
+  top: 12%;
+  left: 10%;
+}
+
+.greenbell-glow-2 {
+  width: 280px;
+  height: 280px;
+  background: rgba(61, 131, 69, 0.14);
+  bottom: 15%;
+  right: 12%;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .greenbell {
+    min-height: 720px;
+    padding: 90px 20px;
+  }
+
+  .greenbell-card {
+    width: 95%;
+    min-height: 590px;
+    padding: 130px 40px 50px;
+    border-radius: 32px;
+  }
+
+  .greenbell-globe {
+    width: 180px;
+    height: 180px;
+    top: -85px;
+    left: 40%;
+    padding: 10px;
+  }
+
+  .greenbell-brand h2 {
+    font-size: 32px;
+  }
+
+  .greenbell-content h1 {
+    font-size: clamp(40px, 6vw, 54px);
+  }
+
+  .greenbell-description {
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 32px;
+  }
+
+  .greenbell-features {
+    gap: 12px;
+  }
+
+  .greenbell-feature {
+    min-width: 160px;
+    padding: 14px 18px;
+  }
+
+  .feature-icon {
+    font-size: 23px;
+  }
+
+  .greenbell-feature span {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .greenbell {
+    min-height: auto;
+    padding: 80px 16px;
+  }
+
+  .greenbell-card {
+    width: 100%;
+    min-height: auto;
+    padding: 115px 30px 45px;
+    border-radius: 28px;
+  }
+
+  .greenbell-globe {
+    width: 160px;
+    height: 160px;
+    top: -75px;
+    left: 30%;
+    padding: 10px;
+  }
+
+  .greenbell-brand {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .logo-wrapper {
+    width: 44px;
+    height: 44px;
+  }
+
+  .greenbell-brand h2 {
+    font-size: 30px;
+  }
+
+  .greenbell-label {
+    padding: 7px 16px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+  }
+
+  .greenbell-content h1 {
+    font-size: clamp(36px, 7vw, 48px);
+    letter-spacing: -1.8px;
+    margin-bottom: 20px;
+  }
+
+  .greenbell-description {
+    font-size: 17px;
+    line-height: 1.55;
+    margin-bottom: 28px;
+  }
+
+  .greenbell-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .greenbell-feature {
+    width: 100%;
+    min-width: 0;
+    padding: 14px 16px;
+    justify-content: center;
+  }
+
+  .greenbell-feature:last-child {
+    grid-column: 1 / -1;
+    max-width: 250px;
+    justify-self: center;
+  }
+
+  .feature-icon {
+    font-size: 22px;
+  }
+
+  .greenbell-feature span {
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .greenbell {
+    padding: 70px 12px;
+  }
+
+  .greenbell-card {
+    width: 100%;
+    padding: 100px 18px 30px;
+    border-radius: 24px;
+  }
+
+  .greenbell-globe {
+    width: 135px;
+    height: 135px;
+    top: -62px;
+    left: 30%;
+    padding: 8px;
+  }
+
+  .greenbell-brand {
+    gap: 8px;
+    margin-bottom: 9px;
+  }
+
+  .logo-wrapper {
+    width: 38px;
+    height: 38px;
+    padding: 3px;
+  }
+
+  .greenbell-brand h2 {
+    font-size: 26px;
+    margin: 6px;
+  }
+
+  .greenbell-label {
+    padding: 6px 12px;
+    font-size: 9px;
+    letter-spacing: 1.2px;
+    margin-bottom: 15px;
+  }
+
+  .greenbell-content h1 {
+    font-size: 34px;
+    line-height: 1.08;
+    letter-spacing: -1.3px;
+    margin-bottom: 17px;
+  }
+
+  .greenbell-description {
+    font-size: 15px;
+    line-height: 1.55;
+    margin-bottom: 24px;
+  }
+
+  .greenbell-features {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .greenbell-feature,
+  .greenbell-feature:last-child {
+    width: 100%;
+    max-width: none;
+    justify-content: flex-start;
+    padding: 13px 16px;
+  }
+
+  .feature-icon {
+    font-size: 21px;
+  }
+
+  .greenbell-feature span {
+    font-size: 14px;
+  }
+
+  .greenbell-glow-1 {
+    width: 220px;
+    height: 220px;
+  }
+
+  .greenbell-glow-2 {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .greenbell {
+    padding: 65px 10px;
+  }
+
+  .greenbell-card {
+    padding: 95px 15px 26px;
+    border-radius: 22px;
+  }
+
+  .greenbell-globe {
+    width: 120px;
+    height: 120px;
+    top: -55px;
+    padding: 7px;
+  }
+
+  .greenbell-brand {
+    gap: 7px;
+  }
+
+  .logo-wrapper {
+    width: 34px;
+    height: 34px;
+  }
+
+  .greenbell-brand h2 {
+    font-size: 24px;
+    margin: 5px;
+  }
+
+  .greenbell-label {
+    font-size: 8px;
+    letter-spacing: 1px;
+    padding: 6px 10px;
+    margin-bottom: 13px;
+  }
+
+  .greenbell-content h1 {
+    font-size: 31px;
+    line-height: 1.08;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+  }
+
+  .greenbell-description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 21px;
+  }
+
+  .greenbell-feature {
+    padding: 12px 14px;
+    gap: 11px;
+  }
+
+  .feature-icon {
+    font-size: 20px;
+  }
+
+  .greenbell-feature span {
+    font-size: 13px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .greenbell {
+    padding: 60px 8px;
+  }
+
+  .greenbell-card {
+    padding: 88px 12px 22px;
+    border-radius: 20px;
+  }
+
+  .greenbell-globe {
+    width: 105px;
+    height: 105px;
+    top: -48px;
+    left: 35%;
+    padding: 6px;
+  }
+
+  .greenbell-brand {
+    gap: 5px;
+    margin-bottom: 7px;
+  }
+
+  .logo-wrapper {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+  }
+
+  .greenbell-brand h2 {
+    font-size: 21px;
+    margin: 4px;
+  }
+
+  .greenbell-label {
+    font-size: 7px;
+    letter-spacing: 0.8px;
+    padding: 5px 8px;
+    margin-bottom: 11px;
+  }
+
+  .greenbell-content h1 {
+    font-size: 27px;
+    line-height: 1.1;
+    letter-spacing: -0.8px;
+    margin-bottom: 13px;
+  }
+
+  .greenbell-description {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+
+  .greenbell-features {
+    gap: 8px;
+  }
+
+  .greenbell-feature {
+    padding: 10px 12px;
+    gap: 9px;
+    border-radius: 12px;
+  }
+
+  .feature-icon {
+    font-size: 18px;
+  }
+
+  .greenbell-feature span {
+    font-size: 12px;
+  }
+
+  .greenbell-glow-1 {
+    width: 180px;
+    height: 180px;
+  }
+
+  .greenbell-glow-2 {
+    width: 160px;
+    height: 160px;
+  }
+}

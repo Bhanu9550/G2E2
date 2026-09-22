@@ -15,4 +15,12 @@
   /** Background & Surface */
   --background: #F5F8F3;
   --white: #FFFFFF;
+
+  /** font families  */
+  --heading-font: "Anton", sans-serif;
+  --captions-font: "Montserrat", sans-serif;
+}
+
+body{
+  background-color: #eff6ef;
 }

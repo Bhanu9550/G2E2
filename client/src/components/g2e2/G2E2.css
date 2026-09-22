@@ -1,0 +1,440 @@
+:root {
+  --primary-green: #1f5135;
+  --eco-green: #3d8345;
+  --accent-green: #63b45a;
+  --brand-purple: #3a397b;
+  --dark: #17251c;
+  --text: #26332b;
+  --background: #f5f8f3;
+  --white: #ffffff;
+}
+
+.g2e2-section {
+  padding: 100px 20px;
+  background: var(--background);
+}
+
+.g2e2-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.logo-container .logo {
+  width: 50px;
+  height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.logo-container h2 {
+  color: var(--primary-green);
+  font-size: 38px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.tagline {
+  color: var(--text);
+  font-size: 18px;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 70px;
+  letter-spacing: -1px;
+}
+
+/* Card Styles */
+.solutions-container {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.solution-card {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 22px 32px;
+  background: var(--white);
+  border: 2px solid rgba(61, 131, 69, 0.15);
+  border-radius: 9999px;
+  box-shadow: 0 10px 30px rgba(31, 81, 53, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.solution-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(31, 81, 53, 0.12);
+  border-color: var(--accent-green);
+}
+
+/* Icon Animation */
+.icon-wrapper {
+  width: 92px;
+  height: 92px;
+  background: linear-gradient(135deg, var(--eco-green), var(--accent-green));
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 8px 20px rgba(61, 131, 69, 0.25);
+}
+
+.solution-icon {
+  font-size: 42px;
+  color: white;
+}
+
+.content {
+  flex: 1;
+}
+
+.solution-title {
+  color: var(--primary-green);
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+}
+
+.solution-desc {
+  color: var(--text);
+  font-size: 15.5px;
+  line-height: 1.65;
+  margin: 0;
+  max-width: 620px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .g2e2-section {
+    padding: 80px 20px;
+  }
+
+  .g2e2-header {
+    margin-bottom: 35px;
+  }
+
+  .logo-container h2 {
+    font-size: 34px;
+  }
+
+  .tagline {
+    font-size: 17px;
+    max-width: 500px;
+  }
+
+  .main-heading {
+    font-size: 38px;
+    margin-bottom: 55px;
+  }
+
+  .solutions-container {
+    max-width: 900px;
+    gap: 16px;
+  }
+
+  .solution-card {
+    gap: 24px;
+    padding: 20px 28px;
+  }
+
+  .icon-wrapper {
+    width: 82px;
+    height: 82px;
+  }
+
+  .solution-icon {
+    font-size: 37px;
+  }
+
+  .solution-title {
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+
+  .solution-desc {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .g2e2-section {
+    padding: 70px 16px;
+  }
+
+  .g2e2-header {
+    margin-bottom: 30px;
+  }
+
+  .logo-container {
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  .logo-container .logo {
+    width: 44px;
+    height: 44px;
+  }
+
+  .logo-container h2 {
+    font-size: 30px;
+  }
+
+  .tagline {
+    font-size: 16px;
+    max-width: 460px;
+    line-height: 1.55;
+  }
+
+  .main-heading {
+    font-size: 34px;
+    line-height: 1.2;
+    margin-bottom: 45px;
+  }
+
+  .solutions-container {
+    max-width: 680px;
+    gap: 15px;
+  }
+
+  .solution-card {
+    gap: 20px;
+    padding: 18px 22px;
+    border-radius: 40px;
+  }
+
+  .icon-wrapper {
+    width: 72px;
+    height: 72px;
+  }
+
+  .solution-icon {
+    font-size: 32px;
+  }
+
+  .solution-title {
+    font-size: 19px;
+    margin-bottom: 8px;
+  }
+
+  .solution-desc {
+    font-size: 14.5px;
+    line-height: 1.55;
+  }
+}
+
+@media (max-width: 425px) {
+  .g2e2-section {
+    padding: 60px 12px;
+  }
+
+  .g2e2-header {
+    margin-bottom: 28px;
+  }
+
+  .logo-container {
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .logo-container h2 {
+    font-size: 24px;
+  }
+
+  .tagline {
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 350px;
+  }
+
+  .main-heading {
+    font-size: 29px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin-bottom: 35px;
+  }
+
+  .solutions-container {
+    gap: 14px;
+  }
+
+  .solution-card {
+    align-items: flex-start;
+    gap: 15px;
+    padding: 18px 16px;
+    border-radius: 24px;
+  }
+
+  .icon-wrapper {
+    width: 58px;
+    height: 58px;
+  }
+
+  .solution-icon {
+    font-size: 27px;
+  }
+
+  .solution-title {
+    font-size: 17px;
+    line-height: 1.3;
+    margin-bottom: 7px;
+  }
+
+  .solution-desc {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 375px) {
+  .g2e2-section {
+    padding: 55px 10px;
+  }
+
+  .g2e2-header {
+    margin-bottom: 25px;
+  }
+
+  .logo-container {
+    gap: 7px;
+  }
+
+  .logo {
+    width: 34px;
+    height: 34px;
+  }
+
+  .logo-container h2 {
+    font-size: 22px;
+  }
+
+  .tagline {
+    font-size: 13px;
+  }
+
+  .main-heading {
+    font-size: 27px;
+    margin-bottom: 30px;
+  }
+
+  .solutions-container {
+    gap: 12px;
+  }
+
+  .solution-card {
+    gap: 13px;
+    padding: 16px 14px;
+    border-radius: 22px;
+  }
+
+  .icon-wrapper {
+    width: 52px;
+    height: 52px;
+  }
+
+  .solution-icon {
+    font-size: 24px;
+  }
+
+  .solution-title {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .solution-desc {
+    font-size: 12.5px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 320px) {
+  .g2e2-section {
+    padding: 50px 8px;
+  }
+
+  .g2e2-header {
+    margin-bottom: 22px;
+  }
+
+  .logo-container {
+    gap: 6px;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .logo-container h2 {
+    font-size: 19px;
+  }
+
+  .tagline {
+    font-size: 12px;
+    line-height: 1.45;
+  }
+
+  .main-heading {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 26px;
+  }
+
+  .solutions-container {
+    gap: 10px;
+  }
+
+  .solution-card {
+    gap: 10px;
+    padding: 14px 11px;
+    border-radius: 18px;
+  }
+
+  .icon-wrapper {
+    width: 46px;
+    height: 46px;
+  }
+
+  .solution-icon {
+    font-size: 21px;
+  }
+
+  .solution-title {
+    font-size: 14.5px;
+    line-height: 1.3;
+    margin-bottom: 5px;
+  }
+
+  .solution-desc {
+    font-size: 11.5px;
+    line-height: 1.45;
+  }
+}

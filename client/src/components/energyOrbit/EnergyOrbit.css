@@ -1,0 +1,742 @@
+/* ==========================================
+   ENERGY ORBIT SECTION
+========================================== */
+
+.energy-orbit-section {
+    width: 100%;
+
+    min-height: 100px;
+
+    /* padding: 10px 10px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.energy-orbit-title {
+    /* border: 2px solid red; */
+    height: 120px ;
+    width: 162px;
+    position: absolute;
+    padding: 20px;
+    top: 8150px;
+    border-radius: 30%;
+    background-color: none;
+    box-shadow: -10px -10px 10px var(--background);
+    z-index: 100;
+}
+
+.energy-orbit-title-inner {
+    text-align: center;
+    margin-bottom: 25px;
+    position: absolute;
+    padding: 20px;
+    top: 8150px;
+    /* bottom: 100px; */
+    border-radius: 30%;
+    background-color: var(--background);
+    box-shadow: 10px 10px 10px var(--background);
+    z-index: 1000;
+}
+
+.energy-orbit-title-inner h1 {
+    color: var(--primary-green);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+
+
+.energy-orbit {
+    position: relative;
+    width: min(650px, 90vw);
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+}
+
+
+/* ==========================================
+   MAIN ORBIT CONTAINER
+========================================== */
+
+.energy-orbit {
+
+    position: relative;
+
+    width: min(650px, 90vw);
+
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* ==========================================
+   CENTER LOGO
+========================================== */
+
+.energy-center {
+
+    position: absolute;
+
+    width: 210px;
+
+    height: 210px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 10;
+}
+
+
+.center-glow {
+
+    position: absolute;
+
+    inset: -25px;
+
+    border-radius: 50%;
+
+    background: rgba(99, 180, 90, 0.12);
+
+    filter: blur(25px);
+
+    animation: centerPulse 3s ease-in-out infinite;
+}
+
+
+.center-logo {
+
+    position: relative;
+
+    width: 100px;
+
+    height: 100px;
+
+    padding: 10px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: var(--white);
+
+    border: 2px solid rgba(61, 131, 69, 0.25);
+
+    box-shadow:
+        0 10px 40px rgba(31, 81, 53, 0.15);
+}
+
+
+.center-logo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* ==========================================
+   INNER ORBIT
+========================================== */
+
+.inner-orbit {
+
+    position: absolute;
+
+    width: 300px;
+
+    height: 300px;
+
+    border-radius: 50%;
+
+    animation: rotateInner 14s linear infinite;
+
+    z-index: 5;
+}
+
+
+/* Orbit line */
+
+.inner-orbit-path {
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 50%;
+
+    border: 2px solid rgba(61, 131, 69, 0.45);
+
+    box-shadow:
+        0 0 20px rgba(99, 180, 90, 0.12);
+}
+
+
+/* ==========================================
+   LEAF
+========================================== */
+
+.leaf-orbit-item {
+
+    position: absolute;
+
+    top: -30px;
+
+    left: 50%;
+
+    width: 65px;
+
+    height: 65px;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: var(--white);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 8px 25px rgba(31, 81, 53, 0.15);
+
+    border: 1px solid rgba(61, 131, 69, 0.25);
+
+    overflow: hidden;
+}
+
+
+.leaf-orbit-item img {
+
+    width: 45px;
+
+    height: 45px;
+
+    object-fit: contain;
+
+    animation: counterRotateInner 14s linear infinite;
+}
+
+
+/* ==========================================
+   OUTER ORBIT
+========================================== */
+
+.outer-orbit {
+
+    position: absolute;
+
+    width: 550px;
+
+    height: 550px;
+
+    border-radius: 50%;
+
+    animation: rotateOuter 22s linear infinite;
+
+    z-index: 3;
+}
+
+
+/* ==========================================
+   OUTER ORBIT PATH
+========================================== */
+
+.outer-orbit-path {
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 50%;
+
+    border: 2px dashed rgba(61, 131, 69, 0.45);
+
+    box-shadow:
+        0 0 30px rgba(99, 180, 90, 0.08);
+}
+
+
+/* ==========================================
+   EV LOGO POSITION
+========================================== */
+
+.ev-logo-orbit {
+
+    position: absolute;
+
+    top: -55px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+
+/* ==========================================
+   CHARGING PLUG POSITION
+========================================== */
+
+.plug-orbit {
+
+    position: absolute;
+
+    bottom: -50px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+
+/* ==========================================
+   ORBIT BADGE
+========================================== */
+
+.orbit-badge {
+
+    width: 75px;
+
+    height: 75px;
+
+    padding: 10px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: var(--white);
+
+    border: 2px solid rgba(61, 131, 69, 0.25);
+
+    box-shadow:
+        0 10px 35px rgba(31, 81, 53, 0.16);
+
+    animation: counterRotateOuter 22s linear infinite;
+}
+
+
+.orbit-badge img {
+
+    width: 100%;
+
+    height: 100%; 
+
+    object-fit: contain;
+}
+
+
+/* ==========================================
+   PLUG
+========================================== */
+
+.plug-badge {
+
+    padding: 10px;
+
+    box-shadow:
+        0 10px 35px rgba(31, 81, 53, 0.18);
+}
+
+
+/* ==========================================
+   CENTER PULSE
+========================================== */
+
+@keyframes centerPulse {
+
+    0%,
+    100% {
+
+        transform: scale(0.9);
+
+        opacity: 0.6;
+    }
+
+    50% {
+
+        transform: scale(1.08);
+
+        opacity: 1;
+    }
+}
+
+
+/* ==========================================
+   INNER ROTATION
+========================================== */
+
+@keyframes rotateInner {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes counterRotateInner {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+
+/* ==========================================
+   OUTER ROTATION
+========================================== */
+
+@keyframes rotateOuter {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+
+@keyframes counterRotateOuter {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 991px) {
+
+    .energy-orbit-section {
+
+        min-height: 600px;
+
+        padding: 80px 20px;
+    }
+
+
+    .energy-orbit {
+
+        width: min(560px, 90vw);
+    }
+
+
+    .inner-orbit {
+
+        width: 340px;
+
+        height: 340px;
+    }
+
+
+    .outer-orbit {
+
+        width: 510px;
+
+        height: 510px;
+    }
+
+
+    .energy-center {
+
+        width: 180px;
+
+        height: 180px;
+    }
+
+
+    .center-logo {
+
+        width: 165px;
+
+        height: 165px;
+
+        padding: 22px;
+    }
+
+
+    .orbit-badge {
+
+        width: 90px;
+
+        height: 90px;
+
+        padding: 15px;
+    }
+
+
+    .leaf-orbit-item {
+
+        width: 58px;
+
+        height: 58px;
+    }
+
+
+    .leaf-orbit-item img {
+
+        width: 40px;
+
+        height: 40px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .energy-orbit-section {
+
+        min-height: 470px;
+
+        padding: 60px 10px;
+    }
+
+
+    .energy-orbit {
+
+        width: 92vw;
+
+        max-width: 450px;
+    }
+
+
+    .inner-orbit {
+
+        width: 250px;
+
+        height: 250px;
+    }
+
+
+    .outer-orbit {
+
+        width: 390px;
+
+        height: 390px;
+    }
+
+
+    .energy-center {
+
+        width: 145px;
+
+        height: 145px;
+    }
+
+
+    .center-logo {
+
+        width: 135px;
+
+        height: 135px;
+
+        padding: 18px;
+    }
+
+
+    .leaf-orbit-item {
+
+        top: -23px;
+
+        width: 48px;
+
+        height: 48px;
+    }
+
+
+    .leaf-orbit-item img {
+
+        width: 32px;
+
+        height: 32px;
+    }
+
+
+    .orbit-badge {
+
+        width: 72px;
+
+        height: 72px;
+
+        padding: 12px;
+    }
+
+
+    .ev-logo-orbit {
+
+        top: -36px;
+    }
+
+
+    .plug-orbit {
+
+        bottom: -36px;
+    }
+
+
+    .plug-badge {
+
+        padding: 18px;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL PHONES
+========================================== */
+
+@media (max-width: 400px) {
+
+    .energy-orbit-section {
+
+        min-height: 400px;
+
+        padding: 45px 5px;
+    }
+
+
+    .energy-orbit {
+
+        width: 95vw;
+    }
+
+
+    .inner-orbit {
+
+        width: 220px;
+
+        height: 220px;
+    }
+
+
+    .outer-orbit {
+
+        width: 330px;
+
+        height: 330px;
+    }
+
+
+    .energy-center {
+
+        width: 125px;
+
+        height: 125px;
+    }
+
+
+    .center-logo {
+
+        width: 115px;
+
+        height: 115px;
+
+        padding: 15px;
+    }
+
+
+    .orbit-badge {
+
+        width: 62px;
+
+        height: 62px;
+
+        padding: 10px;
+    }
+
+
+    .leaf-orbit-item {
+
+        top: -20px;
+
+        width: 42px;
+
+        height: 42px;
+    }
+
+
+    .leaf-orbit-item img {
+
+        width: 28px;
+
+        height: 28px;
+    }
+
+
+    .ev-logo-orbit {
+
+        top: -31px;
+    }
+
+
+    .plug-orbit {
+
+        bottom: -31px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .energy-orbit-section {
+        padding: 50px 15px 70px;
+    }
+
+    .energy-orbit-title {
+        margin-bottom: 18px;
+    }
+
+    .energy-orbit-title span {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+}

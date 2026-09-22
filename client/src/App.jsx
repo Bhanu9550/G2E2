@@ -2,16 +2,19 @@ import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Services from "./pages/services/Services";
 import Contact from "./pages/contact/Contact";
+import Founders from "./pages/founders/Founders";
+import Location from "./pages/locations/Location";
+import EnergyOrbit from "./components/energyOrbit/EnergyOrbit"
 import Navbar from "./components/navbar/Navbar"
 import Footer from "./components/footer/Footer"
+
 
 function App() {
   return (
     <>
-      <a href="#home"></a>
+      <section id="home"></section>
 
       <Navbar />
-
       <main>
         <section id="home">
           <Home />
@@ -20,9 +23,21 @@ function App() {
         <section id="about">
           <About />
         </section>
+        
+        <section id="founders">
+          <Founders />
+        </section>
 
         <section id="services">
           <Services />
+        </section>
+        
+        <section>
+          <Location />
+        </section>
+
+        <section>
+          <EnergyOrbit />
         </section>
 
         <section id="contact">
