@@ -1,1 +1,18 @@
 /*! Global CSS for root Variables */
+:root {
+  /** Primary Brand Colors */
+  --primary-green: #1F5135;
+  --eco-green: #3D8345;
+  --accent-green: #63B45A;
+
+  /** Brand Accent */
+  --brand-purple: #3A397B;
+
+  /** Dark Colors */
+  --dark: #17251C;
+  --text: #26332B;
+
+  /** Background & Surface */
+  --background: #F5F8F3;
+  --white: #FFFFFF;
+}
