@@ -1,13 +1,11 @@
 import { useEffect, useState } from 'react'
-import hero_one from "../../../../assets/hero_one.png"
-import hero_two from "../../../../assets/hero_two.png"
 import './Home.css'
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
   const slides = [
     {
-      image: hero_one,
+      image: "/hero_one.png",
       position: "left",
       animation: "from-right",
       title: "Green Bell",
@@ -17,7 +15,7 @@ const Home = () => {
       
     },
     {
-      image: hero_two,
+      image: "/hero_two.png",
       position: "right",
       animation: "from-right",
       title: "Powering a Greener Future",
