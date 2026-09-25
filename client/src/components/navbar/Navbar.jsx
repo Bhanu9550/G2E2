@@ -22,11 +22,14 @@ const Navbar = () => {
             <Link activeClass="active-navLink" className="navLinks" to="about" spy={true} smooth={true} duration={500} >
               About
             </Link>
+            <Link activeClass="active-navLink" className="navLinks" to="founders" spy={true} smooth={true} duration={500} >
+              Founders
+            </Link>
             <Link activeClass="active-navLink" className="navLinks" to="services" spy={true} smooth={true} duration={500} >
               Services
             </Link>
-            <Link activeClass="active-navLink" className="navLinks" to="founders" spy={true} smooth={true} duration={500} >
-              Founders
+            <Link activeClass="active-navLink" className="navLinks" to="branches" spy={true} smooth={true} duration={500} >
+              Branches
             </Link>
             <Link activeClass="active-navLink" className="navLinks" to="contact" spy={true} smooth={true} duration={500} >
               Contact
@@ -39,19 +42,22 @@ const Navbar = () => {
           </div>
         </div>
         <div className={`hamburger-menu ${menuOpen ? "show" : ""}`} >
-          <Link className="nav-link" to="home" smooth={true} duration={500} onClick={closeMenu} >
+          <Link activeClass="active-navLink"  className="nav-link" to="home" smooth={true} duration={500} onClick={closeMenu} >
             Home
           </Link>
-          <Link className="nav-link" to="about" smooth={true} duration={500} onClick={closeMenu} >
+          <Link activeClass="active-navLink"  className="nav-link" to="about" smooth={true} duration={500} onClick={closeMenu} >
             About
           </Link>
-          <Link className="nav-link" to="services" smooth={true} duration={500} onClick={closeMenu} >
-            Services
-          </Link>
-          <Link className="nav-link" to="founders" smooth={true} duration={500} onClick={closeMenu} >
+          <Link activeClass="active-navLink"  className="nav-link" to="founders" smooth={true} duration={500} onClick={closeMenu} >
             Founders
           </Link>
-          <Link className="nav-link" to="contact" smooth={true} duration={500} onClick={closeMenu} >
+          <Link activeClass="active-navLink"  className="nav-link" to="services" smooth={true} duration={500} onClick={closeMenu} >
+            Services
+          </Link>
+          <Link  activeClass="active-navLink" className="nav-link" to="branches" smooth={true} duration={500} onClick={closeMenu} >
+            Branches
+          </Link>
+          <Link  activeClass="active-navLink" className="nav-link" to="contact" smooth={true} duration={500} onClick={closeMenu} >
             Contact
           </Link>
         </div>

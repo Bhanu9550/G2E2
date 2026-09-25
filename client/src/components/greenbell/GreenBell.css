@@ -7,26 +7,15 @@
   --deep-green: #0c291b;
 }
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .greenbell {
-  position: relative;
-  width: 100%;
-  min-height: 780px;
-  padding: 100px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 700px;
+  padding-top: 100px;
   overflow: hidden;
-  margin-top: 100px;
+  margin: 20px 8%;
 }
 
 .greenbell-card {
   position: relative;
-  width: min(1100px, 100%);
   min-height: 620px;
   padding: 140px 60px 60px;
   border-radius: 36px;
@@ -200,11 +189,9 @@
 @media (max-width: 1024px) {
   .greenbell {
     min-height: 720px;
-    padding: 90px 20px;
   }
 
   .greenbell-card {
-    width: 95%;
     min-height: 590px;
     padding: 130px 40px 50px;
     border-radius: 32px;
@@ -254,11 +241,9 @@
 @media (max-width: 768px) {
   .greenbell {
     min-height: auto;
-    padding: 80px 16px;
   }
 
   .greenbell-card {
-    width: 100%;
     min-height: auto;
     padding: 115px 30px 45px;
     border-radius: 28px;
@@ -335,10 +320,10 @@
 
 
 @media (max-width: 425px) {
-  .greenbell {
-    padding: 70px 12px;
+  .greenbell{
+    margin: auto 2%;
+    padding-top: 70px;
   }
-
   .greenbell-card {
     width: 100%;
     padding: 100px 18px 30px;
@@ -423,9 +408,6 @@
 
 
 @media (max-width: 375px) {
-  .greenbell {
-    padding: 65px 10px;
-  }
 
   .greenbell-card {
     padding: 95px 15px 26px;

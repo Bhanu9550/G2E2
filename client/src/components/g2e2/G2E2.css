@@ -113,6 +113,7 @@
 
 .solution-title {
   color: var(--primary-green);
+  font-family: var(--heading-font);
   font-size: 22px;
   font-weight: 600;
   margin: 0 0 12px 0;
@@ -121,6 +122,7 @@
 
 .solution-desc {
   color: var(--text);
+  font-family: var(--captions-font);
   font-size: 15.5px;
   line-height: 1.65;
   margin: 0;
@@ -248,7 +250,7 @@
 
 @media (max-width: 425px) {
   .g2e2-section {
-    padding: 60px 12px;
+    padding: 20px 2%;
   }
 
   .g2e2-header {
@@ -315,9 +317,6 @@
 }
 
 @media (max-width: 375px) {
-  .g2e2-section {
-    padding: 55px 10px;
-  }
 
   .g2e2-header {
     margin-bottom: 25px;
@@ -377,7 +376,7 @@
 
 @media (max-width: 320px) {
   .g2e2-section {
-    padding: 50px 8px;
+    padding: 20px 2%;
   }
 
   .g2e2-header {
@@ -405,7 +404,7 @@
   .main-heading {
     font-size: 24px;
     line-height: 1.2;
-    margin-bottom: 26px;
+    margin-bottom: 10px;
   }
 
   .solutions-container {

@@ -10,7 +10,7 @@ function EnergyOrbit() {
             <div className="energy-orbit-title-inner">
                 <h3>INNOVATION</h3>
                 <h1>G2E2 Group</h1>
-                <span>Driving Innovation</span><br />
+                <span>Driving Innovation </span>
                 <span>Across INDIA</span>
             </div>
             <div className="energy-orbit">

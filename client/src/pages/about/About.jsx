@@ -1,9 +1,11 @@
 
 import { useEffect, useRef } from "react";
+import { useMediaQuery } from 'react-responsive'
 import leaf_logo from "../../assets/leaf_logo.png";
 import "./About.css";
 
 const About = () => {
+  const isMobileSize = useMediaQuery({ maxWidth: 450 })
   const containerRef = useRef(null);
   const stickyRef = useRef(null);
   const boxRef = useRef(null);
@@ -11,7 +13,10 @@ const About = () => {
   const contentRef = useRef(null);
   const leafRef = useRef(null);
 
+
   useEffect(() => {
+    const startWidth = isMobileSize ? 350 : 500;
+    const startHeight = isMobileSize ? 350 : 500;
     const handleScroll = () => {
       const container = containerRef.current;
       const sticky = stickyRef.current;
@@ -30,11 +35,11 @@ const About = () => {
 
       const shapeProgress = Math.min(progress / 0.45, 1);
       const easedShape = shapeProgress * shapeProgress * (3 - 2 * shapeProgress);
-      const startWidth = 500;
+      
       const maxWidth = container.clientWidth;
 
       const width = startWidth + (maxWidth - startWidth) * easedShape;
-      const startHeight = 500;
+     
       const maxHeight = sticky.clientHeight;
       const desiredHeight = startHeight + (maxHeight - startHeight) * easedShape;
       const height = Math.min( desiredHeight, maxHeight);
@@ -78,7 +83,7 @@ const About = () => {
       window.removeEventListener("scroll", scrollHandler);
       window.removeEventListener("resize", handleScroll);
     };
-  }, []);
+  }, [isMobileSize]);
 
   return (
     <>

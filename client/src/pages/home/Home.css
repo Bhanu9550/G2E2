@@ -10,6 +10,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  
 }
 .hero-overlay {
   position: absolute;
@@ -27,7 +28,7 @@
   animation-fill-mode: both;
 }
 .hero-content.left {
-  left: 8%;
+  left: 10%;
   text-align: left;
 }
 .hero-content.right {
@@ -73,7 +74,7 @@
 .hero-content p {
   font-family: var(--captions-font);
   font-weight: 600;
-  color: #1F5135;
+  color: rgb(221, 229, 212);
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 25px;
@@ -82,8 +83,10 @@
   padding: 13px 28px;
   border: none;
   border-radius: 30px;
+  font-family: var(--captions-font);
   background: #168a4a;
-  color: white;
+  color: rgb(221, 229, 212);
+  font-weight: 650;
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s ease;
@@ -182,18 +185,24 @@
 }
 
 @media (max-width: 480px) {
+  .hero-section{
+    height: 70vh;
+  }
   .hero-content {
     max-width: 75%;
   }
   .hero-content h1 {
-    font-size: 32px;
+    font-size: 40px;
   }
   .hero-content p {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 1.5;
   }
   .hero-content button {
     padding: 11px 20px;
     font-size: 14px;
+  }
+  .carousel-btn{
+   display: none; 
   }
 }

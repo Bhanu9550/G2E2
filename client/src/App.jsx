@@ -32,7 +32,7 @@ function App() {
           <Services />
         </section>
         
-        <section>
+        <section id="branches">
           <Location />
         </section>
 

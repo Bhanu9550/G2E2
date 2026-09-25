@@ -19,7 +19,7 @@ const Home = () => {
     {
       image: hero_two,
       position: "right",
-      animation: "from-left",
+      animation: "from-right",
       title: "Powering a Greener Future",
       description:
         "Building a sustainable ecosystem through renewable energy, clean mobility and eco-friendly businesses.",

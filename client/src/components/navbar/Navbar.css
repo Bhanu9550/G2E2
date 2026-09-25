@@ -39,12 +39,14 @@
     color: var(--brand-pruple);
     padding: 8px 4px;
     transition: color 0.3s ease;
+    font-family: var(--heading-font);
 }
 .navLinks:hover {
     color: var(--eco-green);
 }
 .active-navLink {
     color: var(--eco-green);
+    border-bottom: 2px solid var(--eco-green);
 }
 .hamburger {
     display: none;
@@ -87,10 +89,10 @@
     position: fixed;
     top: 80px;
     right: 0;
-    width: 50%;
+    width: 100%;
     height: calc(100vh - 80px);
     padding: 25px;
-    background-color: var(--background);
+    background-color: #eff6ef;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -113,6 +115,7 @@
     font-weight: 600;
     color: var(--brand-pruple);
     cursor: pointer;
+    font-family: var(--heading-font);
     transition: color 0.3s ease;
 }
 
@@ -135,13 +138,10 @@
         width: 90%;
     }
     .logo {
-        width: 165px;
+        width: 185px;
     }
     .hamburger {
         width: 28px;
         height: 23px;
-    }
-    .hamburger-menu {
-        width: 70%;
     }
 }
